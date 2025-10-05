@@ -1,4 +1,4 @@
-package com.example.shoppingcart.model;
+package com.example.shoppingcart.entity;
 
 import com.example.shoppingcart.valueobject.Money;
 import com.example.shoppingcart.valueobject.ProductId;
