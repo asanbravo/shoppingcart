@@ -1,10 +1,10 @@
-package com.example.artverse;
+package com.example.shoppingcart;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ArtverseApplicationTests {
+class ShoppingcartApplicationTests {
 
 	@Test
 	void contextLoads() {

@@ -1,13 +1,13 @@
-package com.example.artverse;
+package com.example.shoppingcart;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ArtverseApplication {
+public class ShoppingcartApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ArtverseApplication.class, args);
+		SpringApplication.run(ShoppingcartApplication.class, args);
 	}
 
 }
