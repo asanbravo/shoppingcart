@@ -9,7 +9,7 @@ public record Product(
         ProductId id,
         String name,
         Optional<String> description,
-        Money money,
+        Money price,
         int stock
 ) {
 
