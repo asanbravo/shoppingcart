@@ -11,15 +11,21 @@
         <relativePath>..</relativePath>
     </parent>
 
-    <packaging>jar</packaging>
     <artifactId>application</artifactId>
+    <packaging>jar</packaging>
 
     <dependencies>
         <dependency>
             <groupId>com.example</groupId>
             <artifactId>domain</artifactId>
-            <version>${project.version}</version>
         </dependency>
+
+        <!-- Solo si mantienes @Service en application -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>

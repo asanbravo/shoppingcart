@@ -25,4 +25,22 @@ public record Product(
     public static Product of(ProductId id, String name, Optional<String> description, Money money, int stock) {
         return new Product(id, name, description, money, stock);
     }
+
+    public Product withStock(int newStock) {
+        if (newStock < 0) {
+            throw new IllegalArgumentException("Stock cannot be negative");
+        }
+
+        if (this.stock == newStock) {
+            return this;
+        }
+
+        return new Product(
+                this.id,
+                this.name,
+                this.description,
+                this.price,
+                newStock
+        );
+    }
 }
