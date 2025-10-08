@@ -1,8 +1,8 @@
-package shoppingcart.service;
+package com.example.shoppingcart.service;
 
-import shoppingcart.dto.CreateProductCommand;
-import shoppingcart.dto.ProductResponse;
-import shoppingcart.usecase.CreateProductUseCase;
+import com.example.shoppingcart.dto.CreateProductCommand;
+import com.example.shoppingcart.dto.ProductResponse;
+import com.example.shoppingcart.usecase.CreateProductUseCase;
 
 import org.springframework.stereotype.Service;
 

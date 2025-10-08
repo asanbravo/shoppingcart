@@ -1,4 +1,4 @@
-package shoppingcart.dto;
+package com.example.shoppingcart.dto;
 
 public record ProductResponse(  String id,
                                 String name,
