@@ -1,4 +1,6 @@
 package com.example.shoppingcart.dto;
 
-public record CreateProductCommand(String name, double price, int stock, String description) {
+import java.math.BigDecimal;
+
+public record CreateProductCommand(String name, BigDecimal price, int stock, String description) {
 }

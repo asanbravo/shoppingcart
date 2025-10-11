@@ -16,8 +16,6 @@ public interface ProductRepository {
 
     boolean existsById(ProductId productId);
 
-    boolean existsByName(String name);
-
     Products findAll();
 
     boolean hasStock(ProductId productId, int quantity);

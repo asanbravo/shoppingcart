@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -11,21 +10,29 @@
         <relativePath>..</relativePath>
     </parent>
 
+    <artifactId>boot</artifactId>
     <packaging>jar</packaging>
-    <artifactId>domain</artifactId>
+    <name>boot</name>
+    <description>Spring Boot entrypoint (hexagonal: wiring + inbound adapters)</description>
 
     <dependencies>
         <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter</artifactId>
-            <scope>test</scope>
+            <groupId>com.example</groupId>
+            <artifactId>application</artifactId>
         </dependency>
+
         <dependency>
-            <groupId>org.jetbrains</groupId>
-            <artifactId>annotations</artifactId>
-            <version>24.1.0</version> <!-- o la última estable -->
-            <scope>compileOnly</scope>
-            <optional>true</optional>
+            <groupId>com.example</groupId>
+            <artifactId>infrastructure</artifactId>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 </project>

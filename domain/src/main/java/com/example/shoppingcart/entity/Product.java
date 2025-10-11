@@ -3,12 +3,13 @@ package com.example.shoppingcart.entity;
 import com.example.shoppingcart.valueobject.Money;
 import com.example.shoppingcart.valueobject.ProductId;
 
-import java.util.Optional;
+import org.jetbrains.annotations.Nullable;
+
 
 public record Product(
         ProductId id,
         String name,
-        Optional<String> description,
+        @Nullable String description,
         Money price,
         int stock
 ) {
@@ -22,7 +23,7 @@ public record Product(
         }
     }
 
-    public static Product of(ProductId id, String name, Optional<String> description, Money money, int stock) {
+    public static Product of(ProductId id, String name, @Nullable String description, Money money, int stock) {
         return new Product(id, name, description, money, stock);
     }
 

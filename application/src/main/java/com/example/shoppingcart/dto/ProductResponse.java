@@ -1,8 +1,12 @@
 package com.example.shoppingcart.dto;
 
-public record ProductResponse(  String id,
-                                String name,
-                                double price,
-                                int stock,
-                                String description) {
+import java.math.BigDecimal;
+
+public record ProductResponse(
+        String id,
+        String name,
+        BigDecimal price,
+        int stock,
+        String description
+) {
 }
